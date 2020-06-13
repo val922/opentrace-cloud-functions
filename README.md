@@ -37,7 +37,7 @@ It needs to be converted to Base64 for storage in GCP Secret Manager.
 
 A simple method to generate a random key and encode it in Base64 is:
 ```shell script
-head -c32 /dev/urandom | base64
+head -c64 /dev/urandom | base64
 ```
 
 #### Store the key in Secret Manager
